@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>BUTTERFLY OC CLASSES | Best Coaching Center in Jamshedpur</title>
+    <meta name="description" content="Best Coaching Center For SSC, Bank PO & Railway Preparation In Jamshedpur. Crack competitive exams with expert faculty and smart learning.">
+    <meta name="theme-color" content="#F59E0B">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           VARIABLES & DESIGN SYSTEM (YELLOW + DARK SLATE THEME)
+           ========================================================================== */
+        :root {
+            /* Premium Yellow/Amber Theme */
+            --primary: #F59E0B;       /* Amber 500 */
+            --primary-hover: #D97706; /* Amber 600 */
+            --primary-light: #FEF3C7; /* Amber 100 */
+            --primary-dark: #B45309;  /* Amber 700 */
+            
+            /* Dark/Slate Contrasts */
+            --secondary: #0F172A;     /* Slate 900 */
+            --secondary-light: #1E293B;/* Slate 800 */
+            
+            /* Backgrounds */
+            --bg-body: #FAFAF9;       /* Warm White */
+            --bg-card: #FFFFFF;
+            --bg-section: #F1F5F9;    /* Slate 100 */
+            
+            /* Text Colors */
+            --text-dark: #0F172A;
+            --text-main: #334155;
+            --text-muted: #64748B;
+            
+            /* Utility Colors */
+            --border-color: rgba(15, 23, 42, 0.1);
+            --border-light: #E2E8F0;
+            --success: #10B981;
+            --danger: #EF4444;
+
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%);
+            --gradient-dark: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            
+            /* Typography */
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.025);
+            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.05), 0 10px 10px -5px rgba(0,0,0,0.02);
+            --shadow-glow: 0 10px 25px -5px rgba(245, 158, 11, 0.4);
+
+            /* Transitions */
+            --trans-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --trans-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --trans-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+            /* Layout Layout */
+            --max-w: 1280px;
+            --section-py: 90px;
+        }
+
+        /* ==========================================================================
+           RESET & BASE RULES (Fixing Size Issues)
+           ========================================================================== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; overflow-x: hidden; }
+        body { 
+            font-family: var(--font-body); 
+            background-color: var(--bg-body); 
+            color: var(--text-main); 
+            line-height: 1.6; 
+            overflow-x: hidden; 
+            -webkit-font-smoothing: antialiased; 
+        }
+        
+        h1, h2, h3, h4, h5, h6 { 
+            font-family: var(--font-heading); 
+            color: var(--text-dark); 
+            line-height: 1.2; 
+            letter-spacing: -0.02em; 
+            margin-bottom: 1rem;
+        }
+        
+        a { text-decoration: none; color: inherit; transition: all var(--trans-fast); }
+        ul { list-style: none; }
+        
+        /* STRICT IMAGE & SVG RULES to prevent giant logos */
+        img, video { max-width: 100%; height: auto; display: block; border-style: none; }
+        svg { max-width: 100%; height: auto; display: block; fill: currentColor; }
+        
+        button, input, textarea, select { font-family: inherit; border: none; outline: none; background: none; }
+        button { cursor: pointer; }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-body); }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+        ::selection { background-color: var(--primary); color: #fff; }
+
+        /* ==========================================================================
+           GLOBAL UTILITIES
+           ========================================================================== */
+        .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; position: relative; z-index: 10; }
+        .section { padding: var(--section-py) 0; position: relative; overflow: hidden; }
+        .section-alt { background-color: var(--bg-section); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
+        .text-center { text-align: center; }
+        
+        /* Headings */
+        .heading-xl { font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 900; line-height: 1.1; color: var(--secondary); }
+        .heading-lg { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: var(--secondary); }
+        .heading-md { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--secondary); }
+        
+        .subtitle { font-size: clamp(1rem, 1.5vw, 1.125rem); color: var(--text-muted); margin-bottom: 2rem; max-width: 700px; }
+        .subtitle.mx-auto { margin-left: auto; margin-right: auto; }
+        
+        .text-highlight { color: var(--primary); }
+        
+        .tagline { 
+            display: inline-flex; align-items: center; gap: 8px; 
+            background: var(--primary-light); color: var(--primary-dark); 
+            padding: 8px 16px; border-radius: 100px; 
+            font-weight: 700; font-size: 0.875rem; text-transform: uppercase; 
+            letter-spacing: 0.1em; margin-bottom: 24px; border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+        .tagline svg { width: 16px; height: 16px; }
+
+        /* Buttons */
+        .btn { 
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px; 
+            padding: 14px 28px; font-family: var(--font-heading); font-size: 0.95rem; 
+            font-weight: 700; border-radius: 8px; transition: transform var(--trans-fast), box-shadow var(--trans-fast); 
+            will-change: transform; text-transform: uppercase; letter-spacing: 0.05em; 
+        }
+        .btn-primary { 
+            background: var(--primary); color: #fff; box-shadow: var(--shadow-glow); 
+        }
+        .btn-primary:hover { 
+            background: var(--primary-hover); transform: translateY(-3px); box-shadow: 0 15px 25px -5px rgba(245, 158, 11, 0.5); color: #fff; 
+        }
+        .btn-secondary { 
+            background: var(--secondary); color: #fff; box-shadow: var(--shadow-md); 
+        }
+        .btn-secondary:hover { 
+            background: var(--secondary-light); transform: translateY(-3px); box-shadow: var(--shadow-lg); color: #fff; 
+        }
+        .btn-outline {
+            background: var(--bg-card); color: var(--secondary); border: 2px solid var(--border-light);
+        }
+        .btn-outline:hover {
+            border-color: var(--primary); color: var(--primary); transform: translateY(-3px);
+        }
+
+        /* Scroll Reveal Animations (GPU Accelerated) */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all var(--trans-slow); will-change: opacity, transform; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Blobs & Backgrounds */
+        .blob { position: absolute; border-radius: 50%; filter: blur(80px); z-index: 1; opacity: 0.3; pointer-events: none; }
+        .blob-yellow { background: var(--primary); }
+        .blob-dark { background: var(--secondary); }
+
+        /* ==========================================================================
+           TOP NOTICE BAR (NEW FEATURE)
+           ========================================================================== */
+        .top-notice-bar {
+            background: var(--secondary);
+            color: #fff;
+            padding: 8px 0;
+            font-size: 0.85rem;
+            font-weight: 500;
+            position: relative;
+            z-index: 1002;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .notice-label {
+            background: var(--primary);
+            color: #fff;
+            padding: 4px 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 2;
+            position: relative;
+            box-shadow: 5px 0 15px var(--secondary);
+        }
+        .marquee-wrapper {
+            flex-grow: 1;
+            overflow: hidden;
+            position: relative;
+        }
+        .marquee-content {
+            display: flex;
+            white-space: nowrap;
+            animation: marquee 25s linear infinite;
+        }
+        .marquee-content:hover { animation-play-state: paused; }
+        .marquee-item { margin-right: 50px; display: inline-flex; align-items: center; gap: 8px; }
+        .marquee-item svg { width: 14px; height: 14px; fill: var(--primary); }
+        @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+        /* ==========================================================================
+           HEADER & NAVIGATION
+           ========================================================================== */
+        .header { 
+            position: sticky; top: 0; left: 0; width: 100%; z-index: 1000; 
+            padding: 16px 0; background: rgba(255, 255, 255, 0.95); 
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); 
+            border-bottom: 1px solid var(--border-light); transition: all var(--trans-base); 
+        }
+        .header.scrolled { padding: 10px 0; box-shadow: var(--shadow-sm); }
+        
+        .nav-container { display: flex; align-items: center; justify-content: space-between; }
+        
+        /* Custom Logo */
+        .brand-logo { display: flex; align-items: center; gap: 12px; z-index: 1001; position: relative; }
+        .logo-svg { width: 45px; height: 45px; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .logo-title { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 900; color: var(--secondary); letter-spacing: 0px; }
+        .logo-subtitle { font-size: 0.7rem; font-weight: 700; color: var(--primary); letter-spacing: 1px; text-transform: uppercase; }
+
+        .nav-links { display: flex; align-items: center; gap: 32px; }
+        .nav-link { font-size: 0.95rem; font-weight: 600; color: var(--text-dark); position: relative; padding: 5px 0; }
+        .nav-link::after { 
+            content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; 
+            background: var(--primary); transform: scaleX(0); transform-origin: right; transition: transform var(--trans-base); 
+        }
+        .nav-link:hover { color: var(--primary); }
+        .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+
+        .hamburger { display: none; width: 30px; height: 20px; position: relative; cursor: pointer; z-index: 1001; }
+        .hamburger span { display: block; position: absolute; height: 3px; width: 100%; background: var(--secondary); border-radius: 3px; transition: all var(--trans-base); }
+        .hamburger span:nth-child(1) { top: 0; }
+        .hamburger span:nth-child(2) { top: 8px; }
+        .hamburger span:nth-child(3) { top: 16px; }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg); top: 8px; }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg); top: 8px; }
+
+        .mobile-menu { 
+            position: fixed; inset: 0; background: var(--bg-card); z-index: 1000; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; 
+            gap: 24px; opacity: 0; visibility: hidden; transform: translateY(-20px); transition: all var(--trans-base); 
+        }
+        .mobile-menu.active { opacity: 1; visibility: visible; transform: translateY(0); }
+        .mobile-menu .nav-link { font-size: 1.5rem; }
+
+        @media (max-width: 1100px) {
+            .nav-links { display: none; }
+            .hamburger { display: block; }
+        }
+
+        /* ==========================================================================
+           HERO SECTION
+           ========================================================================== */
+        .hero { min-height: 90vh; display: flex; align-items: center; overflow: hidden; background: var(--bg-body); position: relative;}
+        .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; position: relative; z-index: 10; }
+        
+        .hero-content { position: relative; }
+        .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+        
+        .hero-stats-wrap { display: flex; gap: 32px; border-top: 1px solid var(--border-color); padding-top: 32px; }
+        .hs-item h4 { font-size: 1.8rem; font-weight: 900; color: var(--secondary); margin-bottom: 0; line-height: 1; }
+        .hs-item h4 span { color: var(--primary); }
+        .hs-item p { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; margin-top: 5px; }
+
+        .hero-visual { position: relative; }
+        .hero-image-box { position: relative; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-xl); z-index: 2; border: 8px solid var(--bg-card); }
+        .hero-image-box img { width: 100%; height: 550px; object-fit: cover; object-position: top; }
+        
+        .hero-badge { 
+            position: absolute; bottom: 30px; left: -30px; background: var(--bg-card); 
+            padding: 16px 24px; border-radius: 16px; box-shadow: var(--shadow-lg); 
+            display: flex; align-items: center; gap: 16px; z-index: 3; 
+            border: 1px solid var(--border-light); animation: float 6s ease-in-out infinite; 
+        }
+        .hb-icon { width: 48px; height: 48px; background: var(--primary-light); color: var(--primary-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        .hb-icon svg { width: 24px; height: 24px; }
+        .hb-text h5 { font-size: 1.125rem; margin: 0; color: var(--secondary); }
+        .hb-text p { font-size: 0.85rem; color: var(--text-muted); margin: 0; font-weight: 600; }
+
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+        @media (max-width: 992px) {
+            .hero { padding: 60px 0; min-height: auto; }
+            .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 60px; }
+            .hero-actions, .hero-stats-wrap { justify-content: center; }
+            .hero-badge { left: 20px; bottom: 20px; }
+            .hero-image-box img { height: 400px; }
+        }
+
+        /* ==========================================================================
+           TRUST FEATURES
+           ========================================================================== */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .feature-card { 
+            background: var(--bg-card); border: 1px solid var(--border-light); 
+            border-radius: 16px; padding: 32px 24px; transition: all var(--trans-base); 
+            position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: flex-start;
+        }
+        .feature-card::after {
+            content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px;
+            background: var(--primary); transform: scaleX(0); transform-origin: right; transition: transform var(--trans-base);
+        }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--border-color); }
+        .feature-card:hover::after { transform: scaleX(1); transform-origin: left; }
+        
+        .feat-icon-wrap { 
+            width: 56px; height: 56px; border-radius: 12px; background: var(--bg-section); 
+            display: flex; align-items: center; justify-content: center; margin-bottom: 20px; 
+            color: var(--secondary); transition: all var(--trans-base); 
+        }
+        .feature-card:hover .feat-icon-wrap { background: var(--primary); color: #fff; transform: rotate(10deg); }
+        .feat-icon-wrap svg { width: 28px; height: 28px; }
+        .feature-title { font-size: 1.25rem; margin-bottom: 12px; }
+        .feature-desc { color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin: 0;}
+
+        /* ==========================================================================
+           ABOUT SECTION
+           ========================================================================== */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .about-images { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; position: relative; }
+        .about-img-box { border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-md); }
+        .about-img-box img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--trans-slow); }
+        .about-img-box:hover img { transform: scale(1.05); }
+        .about-img-box:nth-child(2) { transform: translateY(40px); }
+        
+        .about-list { margin-top: 32px; display: grid; gap: 16px; }
+        .about-list li { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--secondary); }
+        .about-list li svg { width: 24px; height: 24px; color: var(--success); flex-shrink: 0; }
+
+        @media (max-width: 992px) { 
+            .about-grid { grid-template-columns: 1fr; } 
+            .about-img-box:nth-child(2) { transform: translateY(0); }
+        }
+
+        /* ==========================================================================
+           EXAM CALENDAR & BATCHES (NEW USEFUL FEATURES)
+           ========================================================================== */
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;}
+        
+        .info-card { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 16px; padding: 32px; box-shadow: var(--shadow-sm); }
+        .info-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; border-bottom: 2px solid var(--bg-section); padding-bottom: 16px; }
+        .info-card-header h3 { margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 8px;}
+        .info-card-header h3 svg { width: 24px; height: 24px; color: var(--primary); }
+        
+        .list-group { display: flex; flex-direction: column; gap: 16px; }
+        .list-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: var(--bg-section); border-radius: 8px; border-left: 4px solid var(--primary); transition: transform var(--trans-fast);}
+        .list-item:hover { transform: translateX(5px); }
+        .list-item-title { font-weight: 700; color: var(--secondary); font-size: 0.95rem;}
+        .list-item-desc { font-size: 0.8rem; color: var(--text-muted); }
+        .list-badge { background: var(--bg-card); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 700; color: var(--primary-dark); box-shadow: var(--shadow-sm); }
+
+        @media (max-width: 992px) { .info-grid { grid-template-columns: 1fr; } }
+
+        /* ==========================================================================
+           SERVICES SECTION (LARGE TABS)
+           ========================================================================== */
+        .tabs-wrapper { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 48px; }
+        .tab-btn { 
+            padding: 12px 24px; background: var(--bg-card); border: 1px solid var(--border-light); 
+            border-radius: 100px; font-weight: 600; font-size: 0.95rem; color: var(--text-muted); 
+            transition: all var(--trans-base); box-shadow: var(--shadow-sm);
+        }
+        .tab-btn:hover { border-color: var(--primary); color: var(--primary); }
+        .tab-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); box-shadow: var(--shadow-md); }
+
+        .tab-content { display: none; animation: fadeIn var(--trans-base); }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .svc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+        .svc-card { 
+            background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 16px; 
+            padding: 32px 24px; transition: all var(--trans-base); display: flex; flex-direction: column; 
+            box-shadow: var(--shadow-sm);
+        }
+        .svc-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+        .svc-header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+        .svc-icon { width: 48px; height: 48px; background: var(--bg-section); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--secondary); transition: all var(--trans-fast); }
+        .svc-card:hover .svc-icon { background: var(--primary); color: #fff; }
+        .svc-icon svg { width: 24px; height: 24px; }
+        .svc-title { font-size: 1.15rem; font-weight: 800; margin: 0; }
+        .svc-desc { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; flex-grow: 1; }
+        .svc-link { font-size: 0.85rem; font-weight: 700; color: var(--secondary); display: inline-flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.05em; padding: 10px 16px; background: var(--bg-section); border-radius: 8px; align-self: flex-start;}
+        .svc-card:hover .svc-link { background: var(--primary-light); color: var(--primary-dark); }
+        .svc-link svg { width: 16px; height: 16px; transition: transform var(--trans-fast); }
+        .svc-card:hover .svc-link svg { transform: translateX(4px); }
+
+        /* ==========================================================================
+           COURSES SECTION
+           ========================================================================== */
+        .courses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 32px; }
+        .course-card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: 1px solid var(--border-light); transition: all var(--trans-base); display: flex; flex-direction: column; box-shadow: var(--shadow-sm); position: relative;}
+        .course-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); border-color: var(--primary); }
+        
+        .course-top { background: var(--secondary); padding: 40px 24px; position: relative; color: #fff; overflow: hidden;}
+        .course-top::before { content: ''; position: absolute; top: -50%; right: -50%; width: 100%; height: 200%; background: radial-gradient(circle, rgba(245, 158, 11, 0.2) 0%, transparent 60%); pointer-events: none;}
+        
+        .course-badge { position: absolute; top: 16px; right: 16px; background: var(--primary); color: #fff; padding: 6px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; z-index: 2; box-shadow: var(--shadow-sm);}
+        
+        .course-title { color: #fff; font-size: 1.5rem; margin-bottom: 8px; position: relative; z-index: 2;}
+        .course-body { padding: 32px 24px; flex-grow: 1; display: flex; flex-direction: column; }
+        
+        .course-features { margin-bottom: 32px; flex-grow: 1; }
+        .course-features li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; font-size: 0.95rem; color: var(--text-main); font-weight: 500;}
+        .course-features svg { width: 20px; height: 20px; color: var(--success); flex-shrink: 0; margin-top: 2px;}
+        
+        .course-card .btn { width: 100%; }
+
+        /* ==========================================================================
+           FREE STUDY MATERIAL (NEW FEATURE)
+           ========================================================================== */
+        .material-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+        .mat-card { background: var(--bg-card); border: 1px solid var(--border-light); padding: 24px; border-radius: 12px; display: flex; align-items: center; justify-content: space-between; transition: all var(--trans-fast); box-shadow: var(--shadow-sm); }
+        .mat-card:hover { border-color: var(--primary); box-shadow: var(--shadow-md); transform: translateY(-3px);}
+        .mat-info { display: flex; align-items: center; gap: 16px; }
+        .mat-icon { width: 48px; height: 48px; background: rgba(239, 68, 68, 0.1); color: var(--danger); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+        .mat-icon svg { width: 24px; height: 24px; }
+        .mat-title { font-weight: 700; font-size: 1.05rem; margin-bottom: 2px; }
+        .mat-size { font-size: 0.8rem; color: var(--text-muted); }
+        .mat-dl { width: 40px; height: 40px; border-radius: 50%; background: var(--bg-section); display: flex; align-items: center; justify-content: center; color: var(--secondary); transition: all var(--trans-fast); }
+        .mat-card:hover .mat-dl { background: var(--primary); color: #fff; }
+
+        /* ==========================================================================
+           TOPPERS & RESULTS
+           ========================================================================== */
+        .toppers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 32px; }
+        .topper-card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: 1px solid var(--border-light); text-align: center; padding: 8px; transition: transform var(--trans-base); box-shadow: var(--shadow-sm);}
+        .topper-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); border-color: var(--primary); }
+        .topper-img-wrap { width: 100%; height: 250px; border-radius: 12px; overflow: hidden; position: relative; }
+        .topper-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--trans-slow); }
+        .topper-card:hover .topper-img-wrap img { transform: scale(1.05); }
+        .topper-info { padding: 24px 16px; position: relative; }
+        .topper-badge { position: absolute; top: -16px; left: 50%; transform: translateX(-50%); background: var(--secondary); color: #fff; padding: 6px 24px; border-radius: 100px; font-size: 0.875rem; font-weight: 800; border: 2px solid var(--bg-card); white-space: nowrap; box-shadow: var(--shadow-sm);}
+        .topper-name { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; margin-top: 10px; color: var(--secondary);}
+        .topper-exam { color: var(--text-muted); font-size: 0.9rem; font-weight: 600; margin-bottom: 0;}
+
+        /* ==========================================================================
+           GALLERY SECTION
+           ========================================================================== */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; grid-auto-rows: 250px; }
+        .gallery-item { border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; box-shadow: var(--shadow-sm); }
+        .gallery-item.wide { grid-column: span 2; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--trans-slow); }
+        .gallery-item::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(15,23,42,0.8) 0%, transparent 50%); opacity: 0; transition: opacity var(--trans-base); }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-item:hover::after { opacity: 1; }
+        .gallery-text { position: absolute; bottom: 20px; left: 20px; color: #fff; z-index: 2; opacity: 0; transform: translateY(10px); transition: all var(--trans-base); font-weight: 700; font-size: 1.1rem;}
+        .gallery-item:hover .gallery-text { opacity: 1; transform: translateY(0); }
+        @media (max-width: 768px) { .gallery-item.wide { grid-column: span 1; } }
+
+        /* ==========================================================================
+           ADMISSION PROCESS
+           ========================================================================== */
+        .process-container { display: flex; justify-content: space-between; position: relative; margin-top: 60px; flex-wrap: wrap; gap: 40px; }
+        .process-line { position: absolute; top: 40px; left: 50px; right: 50px; height: 2px; background: var(--border-light); z-index: 1; border-style: dashed; border-width: 2px 0 0 0;}
+        .process-step { position: relative; z-index: 2; width: calc(25% - 30px); text-align: center; }
+        .process-icon { width: 80px; height: 80px; background: var(--bg-card); border: 2px solid var(--secondary); color: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 1.75rem; font-weight: 900; font-family: var(--font-heading); transition: all var(--trans-base); box-shadow: var(--shadow-sm); }
+        .process-step:hover .process-icon { background: var(--primary); border-color: var(--primary); color: #fff; transform: scale(1.1); box-shadow: var(--shadow-glow); }
+        .process-title { font-size: 1.125rem; font-weight: 800; margin-bottom: 8px; color: var(--secondary);}
+        .process-desc { font-size: 0.9rem; color: var(--text-muted); font-weight: 500;}
+        @media (max-width: 992px) {
+            .process-container { flex-direction: column; align-items: center; }
+            .process-line { display: none; }
+            .process-step { width: 100%; max-width: 300px; }
+        }
+
+        /* ==========================================================================
+           TESTIMONIALS
+           ========================================================================== */
+        .testi-section { background: var(--secondary); color: #fff; overflow: hidden; position: relative;}
+        .testi-section .heading-lg, .testi-section .subtitle { color: #fff; }
+        .testi-section .subtitle { opacity: 0.8; }
+        .testi-slider { position: relative; width: 100%; max-width: 1000px; margin: 0 auto; overflow: hidden; padding: 20px 0; }
+        .testi-track { display: flex; transition: transform var(--trans-slow); }
+        .testi-card { min-width: 100%; padding: 0 20px; }
+        .tc-inner { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 48px; backdrop-filter: blur(10px); text-align: center; position: relative;}
+        .tc-quote { width: 48px; height: 48px; fill: var(--primary); opacity: 0.5; margin: 0 auto 24px; }
+        .tc-text { font-size: 1.25rem; font-style: italic; margin-bottom: 32px; color: #F8FAFC; line-height: 1.8; font-weight: 500;}
+        .tc-user { display: flex; align-items: center; justify-content: center; gap: 16px; }
+        .tc-avatar { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); }
+        .tc-info { text-align: left;}
+        .tc-info h4 { color: #fff; font-size: 1.1rem; margin-bottom: 2px; }
+        .tc-info p { color: var(--primary-light); font-size: 0.875rem; font-weight: 600; margin: 0;}
+        
+        .slider-controls { display: flex; justify-content: center; gap: 16px; margin-top: 40px; }
+        .slider-btn { width: 50px; height: 50px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); color: #fff; display: flex; align-items: center; justify-content: center; transition: all var(--trans-fast); }
+        .slider-btn:hover { background: var(--primary); border-color: var(--primary); transform: scale(1.1);}
+
+        /* ==========================================================================
+           FACULTY
+           ========================================================================== */
+        .faculty-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 32px; }
+        .fac-card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: 1px solid var(--border-light); text-align: center; padding: 40px 24px; transition: transform var(--trans-base); box-shadow: var(--shadow-sm);}
+        .fac-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--primary);}
+        .fac-img { width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 24px; object-fit: cover; border: 4px solid var(--bg-section); box-shadow: var(--shadow-md); transition: transform var(--trans-base); }
+        .fac-card:hover .fac-img { transform: scale(1.1); border-color: var(--primary-light);}
+        .fac-name { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; color: var(--secondary);}
+        .fac-subject { color: var(--primary); font-weight: 700; font-size: 0.9rem; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+        .fac-desc { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; }
+        .fac-social { display: flex; justify-content: center; gap: 12px; }
+        .fac-social a { width: 36px; height: 36px; border-radius: 50%; background: var(--bg-section); display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: all var(--trans-fast); }
+        .fac-social a:hover { background: var(--primary); color: #fff; }
+
+        /* ==========================================================================
+           VIDEO SECTION
+           ========================================================================== */
+        .video-section { position: relative; padding: 140px 0; background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed; text-align: center; }
+        .video-overlay { position: absolute; inset: 0; background: rgba(15, 23, 42, 0.85); }
+        .video-content { position: relative; z-index: 2; }
+        .play-btn { width: 90px; height: 90px; background: var(--primary); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: #fff; margin-bottom: 32px; position: relative; transition: transform var(--trans-fast); box-shadow: var(--shadow-glow);}
+        .play-btn::after { content: ''; position: absolute; inset: -15px; border: 2px solid var(--primary); border-radius: 50%; animation: ripple 2s infinite; pointer-events: none;}
+        .play-btn:hover { transform: scale(1.1); }
+        .play-btn svg { width: 36px; height: 36px; fill: currentColor; margin-left: 6px; }
+        @keyframes ripple { 0% { transform: scale(0.8); opacity: 1; } 100% { transform: scale(1.2); opacity: 0; } }
+
+        /* Modal */
+        .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all var(--trans-base); backdrop-filter: blur(5px); }
+        .modal.active { opacity: 1; visibility: visible; }
+        .modal-content { width: 90%; max-width: 900px; aspect-ratio: 16/9; background: #000; position: relative; transform: scale(0.95); transition: transform var(--trans-base); border-radius: 12px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
+        .modal.active .modal-content { transform: scale(1); }
+        .modal-close { position: absolute; top: -40px; right: 0; color: #fff; font-size: 2.5rem; cursor: pointer; line-height: 1;}
+
+        /* ==========================================================================
+           FAQ SECTION
+           ========================================================================== */
+        .faq-wrap { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; margin-bottom: 16px; overflow: hidden; transition: all var(--trans-fast); box-shadow: var(--shadow-sm);}
+        .faq-item:hover { border-color: var(--primary); }
+        .faq-item.active { border-color: var(--primary); box-shadow: var(--shadow-md); }
+        .faq-header { width: 100%; padding: 24px; display: flex; justify-content: space-between; align-items: center; text-align: left; font-size: 1.1rem; font-weight: 700; color: var(--secondary); transition: color var(--trans-fast); }
+        .faq-item.active .faq-header { color: var(--primary); }
+        .faq-icon { width: 24px; height: 24px; position: relative; flex-shrink: 0; background: var(--bg-section); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all var(--trans-base);}
+        .faq-icon::before, .faq-icon::after { content: ''; position: absolute; background: var(--secondary); transition: transform var(--trans-base), background var(--trans-fast); border-radius: 2px;}
+        .faq-icon::before { width: 12px; height: 2px; }
+        .faq-icon::after { width: 2px; height: 12px; }
+        .faq-item.active .faq-icon { background: var(--primary-light); }
+        .faq-item.active .faq-icon::before, .faq-item.active .faq-icon::after { background: var(--primary); }
+        .faq-item.active .faq-icon::after { transform: rotate(90deg); opacity: 0; }
+        .faq-body { max-height: 0; overflow: hidden; transition: max-height var(--trans-base); }
+        .faq-content { padding: 0 24px 24px; color: var(--text-muted); font-size: 0.95rem; font-weight: 500;}
+
+        /* ==========================================================================
+           BLOG SECTION
+           ========================================================================== */
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 32px; }
+        .blog-card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: 1px solid var(--border-light); transition: transform var(--trans-base), box-shadow var(--trans-base); display: flex; flex-direction: column; box-shadow: var(--shadow-sm);}
+        .blog-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); border-color: var(--primary);}
+        .blog-img { height: 220px; overflow: hidden; position: relative;}
+        .blog-img img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--trans-slow); }
+        .blog-card:hover .blog-img img { transform: scale(1.05); }
+        .blog-content { padding: 24px; flex-grow: 1; display: flex; flex-direction: column; }
+        .blog-tag { color: var(--primary-dark); background: var(--primary-light); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; align-self: flex-start;}
+        .blog-title { font-size: 1.25rem; font-weight: 800; margin-bottom: 12px; color: var(--secondary); line-height: 1.4;}
+        .blog-desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px; flex-grow: 1; font-weight: 500;}
+        .blog-link { font-size: 0.9rem; font-weight: 700; color: var(--secondary); display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 1px; }
+        .blog-link svg { width: 18px; height: 18px; transition: transform var(--trans-fast); fill: var(--primary);}
+        .blog-card:hover .blog-link { color: var(--primary); }
+        .blog-card:hover .blog-link svg { transform: translateX(5px); }
+
+        /* ==========================================================================
+           CONTACT SECTION
+           ========================================================================== */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: flex-start;}
+        .ci-cards { display: grid; gap: 24px; }
+        .ci-card { display: flex; align-items: flex-start; gap: 20px; background: var(--bg-card); padding: 24px; border-radius: 16px; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm); transition: transform var(--trans-fast);}
+        .ci-card:hover { transform: translateX(5px); border-color: var(--primary);}
+        .ci-icon { width: 56px; height: 56px; background: var(--bg-section); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all var(--trans-fast);}
+        .ci-card:hover .ci-icon { background: var(--primary); color: #fff;}
+        .ci-icon svg { width: 28px; height: 28px; }
+        .ci-text h4 { font-size: 1.1rem; font-weight: 800; margin-bottom: 4px; color: var(--secondary);}
+        .ci-text p { color: var(--text-muted); font-size: 0.95rem; font-weight: 500; margin: 0;}
+        
+        .contact-form { background: var(--bg-card); padding: 48px; border-radius: 24px; border: 1px solid var(--border-light); box-shadow: var(--shadow-lg); }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+        .form-group { position: relative; }
+        .form-control { width: 100%; padding: 16px 20px; background: var(--bg-body); border: 1px solid var(--border-light); border-radius: 8px; font-size: 1rem; color: var(--text-dark); font-weight: 500; transition: all var(--trans-fast); outline: none; }
+        .form-control:focus { border-color: var(--primary); background: var(--bg-card); box-shadow: 0 0 0 4px var(--primary-light);}
+        textarea.form-control { min-height: 150px; resize: vertical; }
+        .form-label { position: absolute; top: 18px; left: 20px; color: var(--text-muted); font-size: 1rem; font-weight: 500; transition: all var(--trans-fast); pointer-events: none; }
+        .form-control:focus ~ .form-label, .form-control:not(:placeholder-shown) ~ .form-label { top: -10px; left: 12px; font-size: 0.75rem; background: var(--bg-card); padding: 0 8px; color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 1px;}
+
+        @media (max-width: 992px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .form-grid { grid-template-columns: 1fr; }
+            .contact-form { padding: 32px 24px; }
+        }
+
+        /* ==========================================================================
+           FOOTER
+           ========================================================================== */
+        .footer { background: var(--secondary); color: #fff; padding: 80px 0 24px; position: relative; overflow: hidden; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 60px; position: relative; z-index: 2; }
+        
+        .footer-brand .logo-title { color: #fff; background: none; -webkit-text-fill-color: #fff; }
+        .footer-desc { color: #94A3B8; font-size: 0.95rem; margin: 24px 0; max-width: 320px; font-weight: 500;}
+        .social-links { display: flex; gap: 16px; }
+        .social-links a { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; transition: all var(--trans-fast); }
+        .social-links a:hover { background: var(--primary); transform: translateY(-3px);}
+        .social-links svg { width: 20px; height: 20px; fill: #fff; }
+
+        .footer-title { font-size: 1.125rem; font-weight: 800; color: #fff; margin-bottom: 24px; letter-spacing: 1px; text-transform: uppercase;}
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: #94A3B8; font-size: 0.95rem; font-weight: 500; display: inline-block;}
+        .footer-links a:hover { color: var(--primary); transform: translateX(5px); }
+
+        .nl-form { display: flex; flex-direction: column; gap: 12px; }
+        .nl-input { padding: 14px 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: #fff; outline: none; font-family: inherit;}
+        .nl-input:focus { border-color: var(--primary);}
+        .nl-btn { background: var(--primary); color: #fff; padding: 14px; border-radius: 8px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; transition: background var(--trans-fast); text-align: center;}
+        .nl-btn:hover { background: var(--primary-hover); }
+
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; color: #94A3B8; font-size: 0.875rem; font-weight: 500; flex-wrap: wrap; gap: 16px; position: relative; z-index: 2;}
+        
+        .btt-btn { background: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #fff; transition: background var(--trans-fast); }
+        .btt-btn:hover { background: var(--primary); }
+
+        @media (max-width: 992px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 576px) { .footer-grid { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; text-align: center; } }
+
+        /* ==========================================================================
+           FLOATING ELEMENTS & MODALS
+           ========================================================================== */
+        
+        /* Floating WhatsApp Button (FIXED SIZE) */
+        .wa-float {
+            position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px;
+            background-color: #25D366; color: #FFF; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 900; transition: transform var(--trans-fast);
+        }
+        .wa-float:hover { transform: scale(1.1) translateY(-5px); }
+        .wa-float svg { width: 35px !important; height: 35px !important; fill: currentColor; }
+        
+        /* Entrance Popup Modal */
+        .entrance-popup {
+            position: fixed; inset: 0; background: rgba(15, 23, 42, 0.8); z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: all var(--trans-base); backdrop-filter: blur(5px);
+            padding: 20px;
+        }
+        .entrance-popup.active { opacity: 1; visibility: visible; }
+        .ep-content {
+            background: var(--bg-card); width: 100%; max-width: 500px; border-radius: 24px;
+            padding: 40px; position: relative; text-align: center;
+            transform: scale(0.9) translateY(20px); transition: all var(--trans-base);
+            box-shadow: var(--shadow-xl); border: 2px solid var(--primary);
+        }
+        .entrance-popup.active .ep-content { transform: scale(1) translateY(0); }
+        .ep-close { position: absolute; top: 16px; right: 16px; width: 32px; height: 32px; background: var(--bg-section); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--secondary); transition: all var(--trans-fast);}
+        .ep-close:hover { background: var(--danger); color: #fff; }
+        .ep-icon { width: 64px; height: 64px; background: var(--primary-light); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; }
+        .ep-icon svg { width: 32px; height: 32px; }
+
+        /* Loader */
+        .page-loader { position: fixed; inset: 0; background: var(--bg-body); z-index: 10000; display: flex; justify-content: center; align-items: center; transition: opacity var(--trans-base), visibility var(--trans-base); }
+        .spinner { width: 50px; height: 50px; border: 4px solid var(--border-light); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        body.loaded .page-loader { opacity: 0; visibility: hidden; }
+        
+        /* Progress Bar */
+        .scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: var(--primary); z-index: 10001; width: 0%; transition: width 0.1s; }
+
+        /* Mobile Sticky CTA */
+        .mobile-cta { position: fixed; bottom: 0; left: 0; width: 100%; background: var(--bg-card); padding: 12px 24px; box-shadow: 0 -10px 25px rgba(0,0,0,0.1); z-index: 800; display: none; transform: translateY(100%); transition: transform var(--trans-base); border-top: 1px solid var(--border-color); }
+        .mobile-cta.visible { transform: translateY(0); }
+        .mobile-cta .btn { width: 100%; padding: 16px; font-size: 1rem;}
+        @media (max-width: 768px) { .mobile-cta { display: block; } .wa-float { bottom: 90px; } }
+
+    </style>
+</head>
+<body>
+
+    <div class="page-loader" id="loader"><div class="spinner"></div></div>
+
+    <div class="scroll-progress" id="progressBar"></div>
+
+    <a href="https://wa.me/917384899003?text=Hello%20Butterfly%20OC%20Classes,%20I%20have%20an%20inquiry" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <div class="top-notice-bar">
+        <div class="notice-label">Latest Updates</div>
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <div class="marquee-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> New SSC CGL Target Batch starts from 15th June 2026.</div>
+                <div class="marquee-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> RRB NTPC Foundation Batch registration open!</div>
+                <div class="marquee-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> IBPS PO Free Mock Test available on our App.</div>
+                <div class="marquee-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> Upto 50% Scholarship for merit students. Apply now!</div>
+                <div class="marquee-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> New SSC CGL Target Batch starts from 15th June 2026.</div>
+                <div class="marquee-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg> RRB NTPC Foundation Batch registration open!</div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 15 C30 5, 10 20, 15 45 C20 70, 45 80, 50 95 C55 80, 80 70, 85 45 C90 20, 70 5, 50 15 Z" fill="var(--primary)"/>
+                    <path d="M50 30 C35 20, 25 35, 25 55 C25 70, 45 75, 50 85 C55 75, 75 70, 75 55 C75 35, 65 20, 50 30 Z" fill="#FFFFFF" opacity="0.4"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-title">BUTTERFLY</span>
+                    <span class="logo-subtitle">OC Classes</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#batches" class="nav-link">Batches</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://wa.me/917384899003?text=Hello%20I%20want%20to%20Get%20Admission" target="_blank" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.85rem;">Admission</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="nav-link mobile-link">About</a>
+        <a href="#services" class="nav-link mobile-link">Services</a>
+        <a href="#courses" class="nav-link mobile-link">Courses</a>
+        <a href="#batches" class="nav-link mobile-link">Upcoming Batches</a>
+        <a href="#results" class="nav-link mobile-link">Results</a>
+        <a href="#contact" class="nav-link mobile-link">Contact Us</a>
+        <a href="https://wa.me/917384899003?text=Hello%20I%20want%20to%20Get%20Admission" target="_blank" class="btn btn-primary mobile-link" style="margin-top: 20px;">Admission</a>
+    </div>
+
+    <section class="hero">
+        <div class="blob blob-1 blob-yellow"></div>
+        <div class="blob blob-2 blob-dark"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="tagline reveal">
+                        <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        Best Coaching Center in Jamshedpur
+                    </div>
+                    <h1 class="heading-xl reveal" style="transition-delay: 0.1s;">Crack <span class="text-highlight">SSC, Bank PO & Railway</span> Exams</h1>
+                    <p class="subtitle reveal" style="transition-delay: 0.2s;">Result-driven coaching, expert faculty, smart classrooms, and modern learning systems designed for absolute competitive exam success.</p>
+                    
+                    <div class="hero-actions reveal" style="transition-delay: 0.3s;">
+                        <a href="https://wa.me/917384899003?text=Hello%20I%20want%20to%20Get%20Admission" target="_blank" class="btn btn-primary">Get Admission</a>
+                        <a href="https://wa.me/917384899003?text=Hello%20I%20need%20Free%20Counseling" target="_blank" class="btn btn-outline">Free Counseling</a>
+                    </div>
+
+                    <div class="hero-stats-wrap reveal" style="transition-delay: 0.4s;">
+                        <div class="hs-item">
+                            <h4><span class="counter" data-target="5000">0</span>+</h4>
+                            <p>Students</p>
+                        </div>
+                        <div class="hs-item">
+                            <h4><span class="counter" data-target="500">0</span>+</h4>
+                            <p>Selections</p>
+                        </div>
+                        <div class="hs-item">
+                            <h4><span class="counter" data-target="15">0</span>+</h4>
+                            <p>Faculty</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal" style="transition-delay: 0.2s;">
+                    <div class="hero-image-box">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" alt="Students Learning">
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="hfc-icon">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-8 9z"/></svg>
+                        </div>
+                        <div class="hfc-text">
+                            <h5>Guaranteed Success</h5>
+                            <p>Top Ranks Every Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feat-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3z"/></svg></div>
+                    <h4 class="feature-title">Govt Exam Experts</h4>
+                    <p class="feature-desc">Learn from specialized faculty with 10+ years of experience in SSC & Banking.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.1s;">
+                    <div class="feat-icon-wrap"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 9h-2V7h2v5zm0 4h-2v-2h2v2z"/></svg></div>
+                    <h4 class="feature-title">Weekly Mock Tests</h4>
+                    <p class="feature-desc">Computer Based Tests (CBT) patterned exactly on real exam environments.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.2s;">
+                    <div class="feat-icon-wrap"><svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zm-10-7h9v6h-9z"/></svg></div>
+                    <h4 class="feature-title">Smart Classes</h4>
+                    <p class="feature-desc">Fully AC classrooms equipped with digital boards and smart learning tech.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.3s;">
+                    <div class="feat-icon-wrap"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+                    <h4 class="feature-title">Personal Mentorship</h4>
+                    <p class="feature-desc">1-on-1 guidance to track performance, clear doubts, and build strategy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <span class="tagline">Our Story</span>
+                    <h2 class="heading-lg">Transforming Aspirants into Achievers</h2>
+                    <p class="subtitle">Butterfly OC Classes was founded with a vision to provide top-tier coaching for competitive exams in Jamshedpur. Our mission is to make quality education accessible and highly effective.</p>
+                    <p style="color: var(--text-muted); margin-bottom: 32px; font-weight: 500;">We focus on building strong fundamentals, advanced short-tricks, and intensive practice to ensure our students stand out in the toughest exams.</p>
+                    
+                    <div class="about-list">
+                        <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-8 9z"/></svg> High Selection Ratio in SSC CGL & IBPS.</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-8 9z"/></svg> Up-to-date printed study materials.</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-8 9z"/></svg> Special doubt clearing classes.</li>
+                    </div>
+                </div>
+                
+                <div class="about-images reveal" style="transition-delay: 0.2s;">
+                    <div class="about-img-box"><img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&auto=format&fit=crop" alt="Classroom" loading="lazy"></div>
+                    <div class="about-img-box"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop" alt="Study" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline">Stay Updated</span>
+                <h2 class="heading-lg">Exam Calendar & Notifications</h2>
+                <p class="subtitle mx-auto">Never miss an important date. Keep track of upcoming government exams and our fresh batches.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card reveal">
+                    <div class="info-card-header">
+                        <h3><svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg> Upcoming Exams</h3>
+                    </div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div>
+                                <div class="list-item-title">SSC CGL Tier 1</div>
+                                <div class="list-item-desc">Expected: Sep 2026</div>
+                            </div>
+                            <div class="list-badge">Notification Out</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="list-item-title">IBPS PO Prelims</div>
+                                <div class="list-item-desc">Expected: Oct 2026</div>
+                            </div>
+                            <div class="list-badge">Upcoming</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="list-item-title">RRB NTPC CBT 1</div>
+                                <div class="list-item-desc">Expected: Nov 2026</div>
+                            </div>
+                            <div class="list-badge">Upcoming</div>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="list-item-title">SSC CHSL Tier 1</div>
+                                <div class="list-item-desc">Expected: Dec 2026</div>
+                            </div>
+                            <div class="list-badge">Upcoming</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card reveal" style="transition-delay: 0.1s;" id="batches">
+                    <div class="info-card-header">
+                        <h3><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg> New Batches</h3>
+                    </div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div>
+                                <div class="list-item-title">SSC Target Batch (Morning)</div>
+                                <div class="list-item-desc">Starts: 15th June | 8:00 AM</div>
+                            </div>
+                            <a href="https://wa.me/917384899003?text=Book%20Seat%20SSC%20Morning" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.75rem;">Book Seat</a>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="list-item-title">Banking Foundation (Evening)</div>
+                                <div class="list-item-desc">Starts: 20th June | 4:00 PM</div>
+                            </div>
+                            <a href="https://wa.me/917384899003?text=Book%20Seat%20Banking%20Evening" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.75rem;">Book Seat</a>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="list-item-title">Railway Special Batch</div>
+                                <div class="list-item-desc">Starts: 1st July | 10:00 AM</div>
+                            </div>
+                            <a href="https://wa.me/917384899003?text=Book%20Seat%20Railway" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.75rem;">Book Seat</a>
+                        </div>
+                        <div class="list-item">
+                            <div>
+                                <div class="list-item-title">SSC GD Fast-Track</div>
+                                <div class="list-item-desc">Starts: 5th July | 12:00 PM</div>
+                            </div>
+                            <a href="https://wa.me/917384899003?text=Book%20Seat%20SSC%20GD" class="btn btn-primary" style="padding: 6px 12px; font-size: 0.75rem;">Book Seat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline">What We Offer</span>
+                <h2 class="heading-lg">Comprehensive Services</h2>
+                <p class="subtitle mx-auto">Explore our wide range of educational and professional training programs designed for absolute success.</p>
+            </div>
+
+            <div class="tabs-wrapper reveal">
+                <button class="tab-btn active" data-target="cat-1">Competitive Exams</button>
+                <button class="tab-btn" data-target="cat-2">Technical Courses</button>
+                <button class="tab-btn" data-target="cat-3">Skill Development</button>
+                <button class="tab-btn" data-target="cat-4">Online Learning</button>
+            </div>
+
+            <div class="tab-content active" id="cat-1">
+                <div class="svc-grid">
+                    <div class="svc-card">
+                        <div class="svc-header">
+                            <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3z"/></svg></div>
+                            <h3 class="svc-title">SSC Coaching</h3>
+                        </div>
+                        <p class="svc-desc">Best SSC Coaching Center in Jamshedpur covering CGL, CHSL, MTS & GD.</p>
+                        <a href="https://wa.me/917384899003?text=Inquiry%20for%20SSC%20Coaching" class="svc-link" target="_blank">Enquire on WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/></svg></a>
+                    </div>
+                    <div class="svc-card">
+                        <div class="svc-header">
+                            <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div>
+                            <h3 class="svc-title">Bank PO Coaching</h3>
+                        </div>
+                        <p class="svc-desc">Intensive prep for IBPS, SBI PO & Clerk exams with speed math techniques.</p>
+                        <a href="https://wa.me/917384899003?text=Inquiry%20for%20Bank%20PO" class="svc-link" target="_blank">Enquire on WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/></svg></a>
+                    </div>
+                    <div class="svc-card">
+                        <div class="svc-header">
+                            <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+                            <h3 class="svc-title">Railway Coaching</h3>
+                        </div>
+                        <p class="svc-desc">Targeted preparation for RRB NTPC, ALP, and Group D examinations.</p>
+                        <a href="https://wa.me/917384899003?text=Inquiry%20for%20Railway%20Coaching" class="svc-link" target="_blank">Enquire on WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="cat-2">
+                <div class="svc-grid">
+                    <div class="svc-card">
+                        <div class="svc-header">
+                            <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg></div>
+                            <h3 class="svc-title">Web Development</h3>
+                        </div>
+                        <p class="svc-desc">Learn modern web technologies from scratch to advanced frameworks.</p>
+                        <a href="https://wa.me/917384899003?text=Inquiry%20for%20Web%20Dev" class="svc-link" target="_blank">Enquire on WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/></svg></a>
+                    </div>
+                    <div class="svc-card">
+                        <div class="svc-header">
+                            <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg></div>
+                            <h3 class="svc-title">Mobile App Dev</h3>
+                        </div>
+                        <p class="svc-desc">Build native and cross-platform mobile applications.</p>
+                        <a href="https://wa.me/917384899003?text=Inquiry%20for%20App%20Dev" class="svc-link" target="_blank">Enquire on WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="cat-3">
+                <div class="svc-grid">
+                    <div class="svc-card">
+                        <div class="svc-header">
+                            <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg></div>
+                            <h3 class="svc-title">English Comm.</h3>
+                        </div>
+                        <p class="svc-desc">Master spoken English, soft skills, and personality development.</p>
+                        <a href="https://wa.me/917384899003?text=Inquiry%20for%20English" class="svc-link" target="_blank">Enquire on WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/></svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="cat-4">
+                <div class="svc-grid">
+                    <div class="svc-card">
+                        <div class="svc-header">
+                            <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm20 2h-8c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-6V10h6v7z"/></svg></div>
+                            <h3 class="svc-title">Online Classes</h3>
+                        </div>
+                        <p class="svc-desc">Interactive live virtual classrooms and high-quality e-learning modules.</p>
+                        <a href="https://wa.me/917384899003?text=Inquiry%20for%20Online%20Classes" class="svc-link" target="_blank">Enquire on WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline">Student Resources</span>
+                <h2 class="heading-lg">Free Study Material & Downloads</h2>
+                <p class="subtitle mx-auto">Boost your preparation with our expertly curated notes and previous year question papers.</p>
+            </div>
+
+            <div class="material-grid">
+                <div class="mat-card reveal">
+                    <div class="mat-info">
+                        <div class="mat-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>
+                        <div>
+                            <div class="mat-title">SSC CGL Math Formulae</div>
+                            <div class="mat-size">PDF • 2.4 MB</div>
+                        </div>
+                    </div>
+                    <a href="#" class="mat-dl" aria-label="Download"><svg class="icon-sm" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+                </div>
+                <div class="mat-card reveal" style="transition-delay: 0.1s;">
+                    <div class="mat-info">
+                        <div class="mat-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>
+                        <div>
+                            <div class="mat-title">IBPS PO Prev. Papers</div>
+                            <div class="mat-size">PDF • 5.1 MB</div>
+                        </div>
+                    </div>
+                    <a href="#" class="mat-dl" aria-label="Download"><svg class="icon-sm" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+                </div>
+                <div class="mat-card reveal" style="transition-delay: 0.2s;">
+                    <div class="mat-info">
+                        <div class="mat-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>
+                        <div>
+                            <div class="mat-title">Daily Current Affairs</div>
+                            <div class="mat-size">PDF • 1.2 MB</div>
+                        </div>
+                    </div>
+                    <a href="#" class="mat-dl" aria-label="Download"><svg class="icon-sm" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+                </div>
+                <div class="mat-card reveal" style="transition-delay: 0.3s;">
+                    <div class="mat-info">
+                        <div class="mat-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg></div>
+                        <div>
+                            <div class="mat-title">Static GK Capsule</div>
+                            <div class="mat-size">PDF • 3.5 MB</div>
+                        </div>
+                    </div>
+                    <a href="#" class="mat-dl" aria-label="Download"><svg class="icon-sm" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="courses">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline">Top Rated</span>
+                <h2 class="heading-lg">Popular Coaching Programs</h2>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-card reveal">
+                    <div class="course-top">
+                        <div class="course-badge">12 Months</div>
+                        <h3 class="course-title">SSC Target Batch</h3>
+                    </div>
+                    <div class="course-body">
+                        <ul class="course-features">
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Complete Syllabus Coverage</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 50+ Mock Tests</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Printed Study Material</li>
+                        </ul>
+                        <a href="https://wa.me/917384899003?text=Enroll%20in%20SSC%20Batch" class="btn btn-primary" target="_blank">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card reveal" style="transition-delay: 0.1s;">
+                    <div class="course-top">
+                        <div class="course-badge">8 Months</div>
+                        <h3 class="course-title">Bank PO Foundation</h3>
+                    </div>
+                    <div class="course-body">
+                        <ul class="course-features">
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Pre + Mains Coverage</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Interview Preparation</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Speed Math Tricks</li>
+                        </ul>
+                        <a href="https://wa.me/917384899003?text=Enroll%20in%20Bank%20PO" class="btn btn-primary" target="_blank">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card reveal" style="transition-delay: 0.2s;">
+                    <div class="course-top">
+                        <div class="course-badge">6 Months</div>
+                        <h3 class="course-title">Railway NTPC/Group D</h3>
+                    </div>
+                    <div class="course-body">
+                        <ul class="course-features">
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Special GS & GK Focus</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> CBT Practice Sessions</li>
+                            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Doubt Clearing Classes</li>
+                        </ul>
+                        <a href="https://wa.me/917384899003?text=Enroll%20in%20Railway" class="btn btn-primary" target="_blank">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="results">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline">Hall of Fame</span>
+                <h2 class="heading-lg">Our Proud Achievers</h2>
+            </div>
+            
+            <div class="toppers-grid">
+                <div class="topper-card reveal">
+                    <div class="topper-img-wrap"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop" alt="Student" loading="lazy"></div>
+                    <div class="topper-badge">SSC CGL AIR 42</div>
+                    <div class="topper-info">
+                        <h4 class="topper-name">Rahul Verma</h4>
+                        <p class="topper-exam">Income Tax Inspector</p>
+                    </div>
+                </div>
+                <div class="topper-card reveal" style="transition-delay: 0.1s;">
+                    <div class="topper-img-wrap"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop" alt="Student" loading="lazy"></div>
+                    <div class="topper-badge">SBI PO Cleared</div>
+                    <div class="topper-info">
+                        <h4 class="topper-name">Ananya Sharma</h4>
+                        <p class="topper-exam">Probationary Officer</p>
+                    </div>
+                </div>
+                <div class="topper-card reveal" style="transition-delay: 0.2s;">
+                    <div class="topper-img-wrap"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" alt="Student" loading="lazy"></div>
+                    <div class="topper-badge">RRB NTPC</div>
+                    <div class="topper-info">
+                        <h4 class="topper-name">Priya Das</h4>
+                        <p class="topper-exam">Station Master</p>
+                    </div>
+                </div>
+                <div class="topper-card reveal" style="transition-delay: 0.3s;">
+                    <div class="topper-img-wrap"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="Student" loading="lazy"></div>
+                    <div class="topper-badge">WBPSC Qualified</div>
+                    <div class="topper-info">
+                        <h4 class="topper-name">Karan Singh</h4>
+                        <p class="topper-exam">State Civil Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline">Simple Steps</span>
+                <h2 class="heading-lg">Admission Process</h2>
+            </div>
+            
+            <div class="process-container reveal">
+                <div class="process-line"></div>
+                <div class="process-step">
+                    <div class="process-icon">1</div>
+                    <h4 class="process-title">Counseling</h4>
+                    <p class="process-desc">Free career guidance to select the right exam track.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">2</div>
+                    <h4 class="process-title">Registration</h4>
+                    <p class="process-desc">Fill the form and submit basic documents.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">3</div>
+                    <h4 class="process-title">Batch Selection</h4>
+                    <p class="process-desc">Choose timings that fit your schedule.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">4</div>
+                    <h4 class="process-title">Start Learning</h4>
+                    <p class="process-desc">Get your study materials and begin preparation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testi-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline" style="background: rgba(255,255,255,0.1); color: var(--primary); border-color: rgba(245, 158, 11, 0.3);">Testimonials</span>
+                <h2 class="heading-lg">What Our Students Say</h2>
+            </div>
+            
+            <div class="testi-slider reveal">
+                <div class="testi-track" id="testimonialTrack">
+                    <div class="testi-card">
+                        <div class="tc-inner">
+                            <svg class="tc-quote" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <p class="tc-text">"Butterfly OC Classes changed my approach to SSC prep. The short tricks taught here are life-saving during the actual exam. Highly recommended!"</p>
+                            <div class="tc-user">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Student" class="tc-avatar" loading="lazy">
+                                <div class="tc-info">
+                                    <h4>Aman Kumar</h4>
+                                    <p>SSC CGL Selected</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="tc-inner">
+                            <svg class="tc-quote" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                            <p class="tc-text">"The Bank PO mock tests were exactly like the real IBPS exam interface. The faculty is always available for doubt clearing. Best in Jamshedpur."</p>
+                            <div class="tc-user">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop" alt="Student" class="tc-avatar" loading="lazy">
+                                <div class="tc-info">
+                                    <h4>Sneha Roy</h4>
+                                    <p>IBPS PO Cleared</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevSlide"><svg class="icon" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg></button>
+                    <button class="slider-btn" id="nextSlide"><svg class="icon" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="faculty">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline">Expert Educators</span>
+                <h2 class="heading-lg">Meet Our Top Faculty</h2>
+            </div>
+            
+            <div class="faculty-grid">
+                <div class="fac-card reveal">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" alt="Faculty" class="fac-img" loading="lazy">
+                    <h4 class="fac-name">R.K. Singhania</h4>
+                    <p class="fac-subject">Mathematics Expert</p>
+                    <p class="fac-desc">15+ years exp. Known for lightning-fast calculation tricks.</p>
+                </div>
+                <div class="fac-card reveal" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop" alt="Faculty" class="fac-img" loading="lazy">
+                    <h4 class="fac-name">Neha Gupta</h4>
+                    <p class="fac-subject">Reasoning Head</p>
+                    <p class="fac-desc">12+ years exp. Expert in logical & analytical puzzles.</p>
+                </div>
+                <div class="fac-card reveal" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop" alt="Faculty" class="fac-img" loading="lazy">
+                    <h4 class="fac-name">Sandeep Mahesh</h4>
+                    <p class="fac-subject">English & Comm.</p>
+                    <p class="fac-desc">10+ years exp. Focuses on grammar and vocab for banks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="tagline">Answers</span>
+                <h2 class="heading-lg">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-wrap reveal">
+                <div class="faq-item">
+                    <button class="faq-header">What is the fee structure for SSC/Bank PO? <span class="faq-icon"></span></button>
+                    <div class="faq-body">
+                        <div class="faq-content">Our fee structure varies based on the course duration. We offer very affordable fees with easy installment options. Please contact us on WhatsApp for the exact breakdown.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">Do you provide study materials? <span class="faq-icon"></span></button>
+                    <div class="faq-body">
+                        <div class="faq-content">Yes, we provide comprehensive, updated study materials, daily practice sheets, and previous years' question banks tailored for each specific exam.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-header">Are demo classes available? <span class="faq-icon"></span></button>
+                    <div class="faq-body">
+                        <div class="faq-content">Yes, we provide 2 days of free demo classes so you can experience our teaching methodology before taking admission.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <span class="tagline">Get In Touch</span>
+                    <h2 class="heading-lg">Admissions Are Open</h2>
+                    <p class="subtitle">Have queries regarding batches, fees, or courses? Visit our center or drop a message via WhatsApp for an instant reply.</p>
+                    
+                    <div class="ci-cards">
+                        <div class="ci-card">
+                            <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+                            <div class="ci-text">
+                                <h4>Visit Campus</h4>
+                                <p>R653+3XH, 3rd Floor, Alison's Apartment,<br>Thakur Bari Rd, SNP Area, Ambagan,<br>Sakchi, Jamshedpur, Jharkhand 831001</p>
+                            </div>
+                        </div>
+                        <div class="ci-card">
+                            <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+                            <div class="ci-text">
+                                <h4>Call Us</h4>
+                                <p>091230 40465</p>
+                            </div>
+                        </div>
+                        <div class="ci-card">
+                            <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+                            <div class="ci-text">
+                                <h4>WhatsApp</h4>
+                                <p>7384899003</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap reveal" style="transition-delay: 0.2s;">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="heading-md" style="margin-bottom: 24px;">Quick Inquiry</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder=" " required>
+                                <label class="form-label" for="name">Student Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" class="form-control" placeholder=" " required>
+                                <label class="form-label" for="phone">Mobile Number</label>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <input type="text" id="course" class="form-control" placeholder=" " required>
+                                <label class="form-label" for="course">Interested Course</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="city" class="form-control" placeholder=" " required>
+                                <label class="form-label" for="city">City</label>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 24px;">
+                            <textarea id="message" class="form-control" placeholder=" " required></textarea>
+                            <label class="form-label" for="message">Your Message / Query</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo" style="margin-bottom: 24px;">
+                        <svg class="logo-svg" viewBox="0 0 100 100">
+                            <path d="M50 15 C30 5, 10 20, 15 45 C20 70, 45 80, 50 95 C55 80, 80 70, 85 45 C90 20, 70 5, 50 15 Z" fill="var(--primary)"/>
+                            <path d="M50 30 C35 20, 25 35, 25 55 C25 70, 45 75, 50 85 C55 75, 75 70, 75 55 C75 35, 65 20, 50 30 Z" fill="#FFFFFF" opacity="0.3"/>
+                        </svg>
+                        <div class="logo-text">
+                            <span class="logo-title" style="color:#fff;">BUTTERFLY</span>
+                            <span class="logo-subtitle">OC Classes</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Best Coaching Center For SSC, Bank PO & Railway Preparation In Jamshedpur. Join us to upgrade your life.</p>
+                    <div class="social-links">
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.325V1.325C24 .597 23.403 0 22.675 0z"/></svg></a>
+                        <a href="#"><svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Courses</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">SSC Coaching</a></li>
+                        <li><a href="#">Bank PO</a></li>
+                        <li><a href="#">Railway Preparation</a></li>
+                        <li><a href="#">Spoken English</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#batches">New Batches</a></li>
+                        <li><a href="#results">Results</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Subscribe Newsletter</h4>
+                    <form class="nl-form" onsubmit="event.preventDefault();">
+                        <input type="email" class="nl-input" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div>&copy; 2026 Butterfly OC Classes. All rights reserved.</div>
+                <div style="display: flex; gap: 16px; align-items: center;">
+                    <a href="#">Privacy</a> <a href="#">Terms</a>
+                    <button class="btt-btn" id="bttBtn" aria-label="Back to top">
+                        <svg class="icon-sm" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-8 8h6v8h4v-8h6z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="entrance-popup" id="leadPopup">
+        <div class="ep-content">
+            <button class="ep-close" id="closePopup">&times;</button>
+            <div class="ep-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3z"/></svg>
+            </div>
+            <h2 class="heading-md" style="margin-bottom: 12px;">Get 2 Days Free Demo!</h2>
+            <p class="subtitle mx-auto" style="margin-bottom: 24px;">Experience our smart classes and expert teaching methodology for free.</p>
+            <a href="https://wa.me/917384899003?text=I%20want%20to%20book%20a%202%20Days%20Free%20Demo" class="btn btn-primary" target="_blank" style="width: 100%;">Book Free Demo via WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="mobile-cta">
+        <a href="https://wa.me/917384899003?text=Hello%20I%20want%20to%20Get%20Admission" target="_blank" class="btn btn-primary">Get Admission</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Mobile Menu
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            const toggleMenu = () => {
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            };
+
+            hamburger.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+            // Sticky Header & Scroll Progress & Back to Top & Mobile CTA
+            const header = document.getElementById('header');
+            const progressBar = document.getElementById('progressBar');
+            const bttBtn = document.getElementById('bttBtn');
+            const mobileCta = document.querySelector('.mobile-cta');
+            let isScrolling = false;
+
+            window.addEventListener('scroll', () => {
+                if(!isScrolling) {
+                    window.requestAnimationFrame(() => {
+                        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                        
+                        // Header
+                        if(winScroll > 50) header.classList.add('scrolled');
+                        else header.classList.remove('scrolled');
+                        
+                        // Progress
+                        progressBar.style.width = (winScroll / height) * 100 + "%";
+                        
+                        // Back to Top & Mobile CTA visibility
+                        if(winScroll > 500) {
+                            bttBtn.style.opacity = '1';
+                            bttBtn.style.visibility = 'visible';
+                            if(window.innerWidth <= 768 && mobileCta) mobileCta.classList.add('visible');
+                        } else {
+                            bttBtn.style.opacity = '0';
+                            bttBtn.style.visibility = 'hidden';
+                            if(mobileCta) mobileCta.classList.remove('visible');
+                        }
+
+                        isScrolling = false;
+                    });
+                    isScrolling = true;
+                }
+            });
+
+            bttBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Tabs for Services
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    btn.classList.add('active');
+                    document.getElementById(btn.dataset.target).classList.add('active');
+                });
+            });
+
+            // Scroll Reveal (GPU Accelerated)
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '0px 0px -50px 0px', threshold: 0.1 });
+            
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // Counter Animation
+            const counters = document.querySelectorAll('.counter');
+            let counted = false;
+
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !counted) {
+                        counters.forEach(counter => {
+                            const target = +counter.getAttribute('data-target');
+                            const duration = 2000;
+                            const increment = target / (duration / 16);
+                            let current = 0;
+
+                            const updateCounter = () => {
+                                current += increment;
+                                if (current < target) {
+                                    counter.innerText = Math.ceil(current);
+                                    requestAnimationFrame(updateCounter);
+                                } else {
+                                    counter.innerText = target;
+                                }
+                            };
+                            updateCounter();
+                        });
+                        counted = true;
+                        observer.disconnect();
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            if(document.querySelector('.hero-stats-wrap')) {
+                counterObserver.observe(document.querySelector('.hero-stats-wrap'));
+            }
+
+            // Testimonials Slider
+            const track = document.getElementById('testimonialTrack');
+            const prevBtn = document.getElementById('prevSlide');
+            const nextBtn = document.getElementById('nextSlide');
+            const cards = document.querySelectorAll('.testi-card');
+            
+            if (track && cards.length) {
+                let index = 0;
+                const updateSlider = () => {
+                    track.style.transform = `translateX(-${index * 100}%)`;
+                };
+
+                nextBtn.addEventListener('click', () => {
+                    if(index < cards.length - 1) {
+                        index++;
+                        updateSlider();
+                    }
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    if(index > 0) {
+                        index--;
+                        updateSlider();
+                    }
+                });
+            }
+
+            // Contact Form -> WhatsApp
+            const contactForm = document.getElementById('contactForm');
+            if(contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const name = document.getElementById('name').value;
+                    const phone = document.getElementById('phone').value;
+                    const course = document.getElementById('course').value;
+                    const city = document.getElementById('city').value;
+                    const message = document.getElementById('message').value;
+                    
+                    const waNumber = '917384899003';
+                    const text = `*New Inquiry*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*City:* ${city}\n*Course:* ${course}\n\n*Message:* ${message}`;
+                    
+                    window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`, '_blank');
+                    contactForm.reset();
+                });
+            }
+
+            // Auto Popup Logic (After 5 Seconds)
+            const leadPopup = document.getElementById('leadPopup');
+            const closePopup = document.getElementById('closePopup');
+            
+            if(leadPopup) {
+                setTimeout(() => {
+                    if(!sessionStorage.getItem('popupShown')) {
+                        leadPopup.classList.add('active');
+                        sessionStorage.setItem('popupShown', 'true');
+                    }
+                }, 5000);
+
+                closePopup.addEventListener('click', () => {
+                    leadPopup.classList.remove('active');
+                });
+                
+                leadPopup.addEventListener('click', (e) => {
+                    if(e.target === leadPopup) leadPopup.classList.remove('active');
+                });
+            }
+
+            // Hide loader
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 500);
+        });
+    </script>
+</body>
+</html>
